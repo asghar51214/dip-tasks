@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asghar Ali | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#1f1c2c,#928dab);
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+}
+
+header h1{
+    font-size:24px;
+}
+
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffd369;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:50px 10%;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    max-width:500px;
+}
+
+.hero-text h2{
+    font-size:40px;
+}
+
+.hero-text span{
+    color:#ffd369;
+}
+
+.hero-text p{
+    margin:15px 0;
+}
+
+.hero img{
+    width:250px;
+    border-radius:50%;
+    border:5px solid #ffd369;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#ffd369;
+    color:black;
+    border-radius:25px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:rgb(255, 255, 255);
+}
+
+.section{
+    padding:50px 10%;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:rgba(255, 255, 255, 0.2);
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(173, 17, 17, 0.3);
+}
+
+@media(max-width:768px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero img{
+        margin-top:20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Asghar Ali</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>Hello, I'm <span>Asghar</span></h2>
+        <p>Software Engineering Student | Web Developer</p>
+        <p>I build modern and responsive web applications.</p>
+        <a href="#contact" class="btn">Hire Me</a>
+    </div>
+    <img src="C:\Users\Fast Computer\OneDrive\Desktop\corvit\VFZP0647.JPG" alt="Profile Photo">
+</section>
+
+<section id="projects" class="section">
+    <h2>My Projects</h2>
+
+    <div class="projects">
+        <div class="card">
+            <h3>Student Dashboard</h3>
+            <p>Manage students, courses, and grades efficiently.</p>
+        </div>
+
+        <div class="card">
+            <h3>Text Analysis Tool</h3>
+            <p>Analyze text using NLP techniques.</p>
+        </div>
+
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Modern personal portfolio with animations.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Email: asgharalihamza51214@email.com</p>
+    <p>Phone: 03313287583</p>
+</section>
+
+<footer>
+    <p>© 2026 Asghar Ali | Designed with ❤️</p>
+</footer>
+
+</body>
+</html>
